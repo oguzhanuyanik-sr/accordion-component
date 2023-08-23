@@ -1,3 +1,21 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer base {
+  #root {
+    @apply min-h-screen px-6 bg-gradient-purple font-kumbh flex items-center justify-center overflow-hidden py-24;
+  }
+}
+
+@layer components {
+  .heading {
+    @apply text-darkBlue text-[32px] font-bold select-none;
+  }
+  .title {
+    @apply text-softBlue text-base md:text-lg select-none;
+  }
+  .description {
+    @apply text-lightBlue text-sm md:text-base font-normal leading-[18px];
+  }
+}

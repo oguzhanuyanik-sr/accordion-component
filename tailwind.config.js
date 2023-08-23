@@ -9,28 +9,21 @@ export default {
       xl: '1280px',
     },
     colors: {
-      'light-purple': '#666ca3',
-      purple: '#13183f',
-      'light-gray': '#83869a',
-      'dark-pink': '#f74780',
-      'light-pink': '#ffa7c3',
-      white: '#ffffff',
+      white: '#FFFFFF',
+      softWhite: '#E8E8EA',
+      darkBlue: '#1E1F36',
+      softBlue: '#4B4C5F',
+      lightBlue: '#787887',
     },
     fontFamily: {
-      jakarta: ['Plus Jakarta Sans', 'sans-serif'],
+      kumbh: ['Kumbh Sans', 'sans-serif'],
     },
     extend: {
       boxShadow: {
         card: '0px 25px 50px rgba(6, 22, 141, 0.0442381)',
       },
       backgroundImage: {
-        'gradient-gray': 'linear-gradient(180deg, #FFFFFF 0%, #F0F1FF 100%)',
-        'gradient-pink': 'linear-gradient(322deg, #F02AA6, #FF6F48)',
-        'gradient-pink-hover':
-          'linear-gradient(0deg, rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5), #FF6F48 0%, #F02AA6 100%)',
-        'gradient-purple': 'linear-gradient(237deg, #4851FF, #F02AA6)',
-        'gradient-purple-hover':
-          'linear-gradient(0deg, rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5), #4851FF -54.32%, #F02AA6 100%)',
+        'gradient-purple': 'linear-gradient(180deg, #B068E9 0%, #6463E7 100%)',
       },
     },
     container: {

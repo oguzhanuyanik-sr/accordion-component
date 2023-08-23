@@ -1,7 +1,13 @@
+import Faq from './components/Faq';
+
 type Props = {};
 
 const App = (props: Props) => {
-  return <div>App</div>;
+  return (
+    <>
+      <Faq />
+    </>
+  );
 };
 
 export default App;
