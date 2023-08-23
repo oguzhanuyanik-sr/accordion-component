@@ -1,8 +1,13 @@
-import Arrow from '../../assets/icon-arrow-down.svg';
+import { Arrow } from '../../utils/constants';
 
-type Props = {};
+type QuestionProps = {
+  title: string;
+  desc: string;
+  isVisible: boolean;
+  handleClick: () => void;
+};
 
-const Question = ({ title, desc, handleClick, isVisible }: Props) => {
+const Question = ({ title, desc, isVisible, handleClick }: QuestionProps) => {
   return (
     <div
       onClick={handleClick}
@@ -10,11 +15,17 @@ const Question = ({ title, desc, handleClick, isVisible }: Props) => {
     >
       <div className='flex justify-between items-center'>
         <p
-          className={`title py-3 ${isVisible ? 'font-bold text-darkBlue' : ''}`}
+          className={`title py-3 ${
+            isVisible ? 'font-bold text-darkBlue hover:text-darkBlue' : ''
+          }`}
         >
           {title}
         </p>
-        <img className='h-2 ml-8' src={Arrow} alt='Arrow' />
+        <img
+          className={`h-2 ml-8 ${isVisible ? 'rotate-180' : ''}`}
+          src={Arrow}
+          alt='Arrow'
+        />
       </div>
       <p className={`description pb-4 ${isVisible ? 'block' : 'hidden'}`}>
         {desc}

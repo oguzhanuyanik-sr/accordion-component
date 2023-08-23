@@ -6,6 +6,15 @@
   #root {
     @apply min-h-screen px-6 bg-gradient-purple font-kumbh flex items-center justify-center overflow-hidden py-24;
   }
+
+  img {
+    user-drag: none;
+    -webkit-user-drag: none;
+    user-select: none;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+  }
 }
 
 @layer components {
@@ -13,9 +22,9 @@
     @apply text-darkBlue text-[32px] font-bold select-none;
   }
   .title {
-    @apply text-softBlue text-base md:text-lg select-none;
+    @apply text-softBlue text-base md:text-lg select-none hover:text-orange transition-all;
   }
   .description {
-    @apply text-lightBlue text-sm md:text-base font-normal leading-[18px];
+    @apply text-lightBlue text-sm md:text-base font-normal leading-[18px] select-none;
   }
 }

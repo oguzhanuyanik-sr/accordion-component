@@ -14,6 +14,7 @@ export default {
       darkBlue: '#1E1F36',
       softBlue: '#4B4C5F',
       lightBlue: '#787887',
+      orange: '#F47B56',
     },
     fontFamily: {
       kumbh: ['Kumbh Sans', 'sans-serif'],

@@ -1,18 +1,18 @@
-import Hero from '../assets/illustration-woman-online-mobile.svg';
-import Shadow from '../assets/bg-pattern-mobile.svg';
-import BigHero from '../assets/illustration-woman-online-desktop.svg';
-import BigBox from '../assets/illustration-box-desktop.svg';
-import BigShadow from '../assets/bg-pattern-desktop.svg';
-import { QuestionData } from '../utils/constants';
-import Question from './common/Question';
 import { useState } from 'react';
+import {
+  QuestionData,
+  Hero,
+  Shadow,
+  BigHero,
+  BigBox,
+  BigShadow,
+} from '../utils/constants';
+import Question from './common/Question';
 
-type Props = {};
-
-const Faq = (props: Props) => {
+const Faq = () => {
   const [currentQuestion, setCurrentQuestion] = useState(0);
 
-  const handleClick = (index) => {
+  const handleClick = (index: number) => {
     setCurrentQuestion(index);
   };
 
@@ -26,7 +26,7 @@ const Faq = (props: Props) => {
           alt='Shadow'
         />
       </div>
-      <main className='bg-white rounded-[23px] px-6 pt-[120px] pb-[50px] md:flex md:py-[64px] md:pr-[96px] md:justify-between max-w-[920px] md:mx-10'>
+      <main className='bg-white rounded-[23px] px-6 pt-[120px] pb-[50px] md:flex md:py-[64px] md:pr-[40px] lg:pr-[96px] md:justify-between max-w-[920px] md:mx-10'>
         <div className='hidden md:flex relative items-center ml-[-25px]'>
           <img className='absolute left-[-100px]' src={BigBox} alt='Box' />
           <div className='overflow-hidden'>

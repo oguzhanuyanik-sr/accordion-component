@@ -1,3 +1,10 @@
+import Hero from '../assets/illustration-woman-online-mobile.svg';
+import Shadow from '../assets/bg-pattern-mobile.svg';
+import BigHero from '../assets/illustration-woman-online-desktop.svg';
+import BigBox from '../assets/illustration-box-desktop.svg';
+import BigShadow from '../assets/bg-pattern-desktop.svg';
+import Arrow from '../assets/icon-arrow-down.svg';
+
 const QuestionData = [
   {
     title: 'How many team members can I invite?',
@@ -21,4 +28,4 @@ const QuestionData = [
   },
 ];
 
-export { QuestionData };
+export { QuestionData, Hero, Shadow, BigHero, BigBox, BigShadow, Arrow };
